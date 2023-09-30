@@ -1,0 +1,125 @@
+ARM GAS  C:\Users\tnguy\AppData\Local\Temp\ccUtKCbf.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.main,"ax",%progbits
+  18              		.align	1
+  19              		.global	main
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	main:
+  25              	.LFB65:
+  26              		.file 1 "main.c"
+   1:main.c        **** /*******************************************************************************
+   2:main.c        **** *
+   3:main.c        **** * FILE: 
+   4:main.c        **** * 		main.c
+   5:main.c        **** *
+   6:main.c        **** * DESCRIPTION: 
+   7:main.c        **** * 		Processes commands recieved from a host PC, provides fine control over 
+   8:main.c        **** *       engine controller hardware resources
+   9:main.c        **** *
+  10:main.c        **** *******************************************************************************/
+  11:main.c        **** 
+  12:main.c        **** /*------------------------------------------------------------------------------
+  13:main.c        ****  Standard Includes                                                                     
+  14:main.c        **** ------------------------------------------------------------------------------*/
+  15:main.c        **** #include <stdbool.h>
+  16:main.c        **** 
+  17:main.c        **** 
+  18:main.c        **** /*------------------------------------------------------------------------------
+  19:main.c        ****  Project Includes                                                                     
+  20:main.c        **** ------------------------------------------------------------------------------*/
+  21:main.c        **** /* Application Layer */
+  22:main.c        **** #include "main.h"
+  23:main.c        **** #include "init.h"
+  24:main.c        **** 
+  25:main.c        **** /* Low-level modules */
+  26:main.c        **** 
+  27:main.c        **** 
+  28:main.c        **** /*------------------------------------------------------------------------------
+  29:main.c        ****  MCU Peripheral Handles 
+  30:main.c        **** ------------------------------------------------------------------------------*/
+  31:main.c        **** 
+  32:main.c        **** 
+ARM GAS  C:\Users\tnguy\AppData\Local\Temp\ccUtKCbf.s 			page 2
+
+
+  33:main.c        **** /*------------------------------------------------------------------------------
+  34:main.c        ****  Application entry point                                                      
+  35:main.c        **** ------------------------------------------------------------------------------*/
+  36:main.c        **** int main(void)
+  37:main.c        **** {
+  27              		.loc 1 37 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  38:main.c        **** /*------------------------------------------------------------------------------
+  39:main.c        ****  Local Variables                                                                  
+  40:main.c        **** ------------------------------------------------------------------------------*/
+  41:main.c        **** 
+  42:main.c        **** /*------------------------------------------------------------------------------
+  43:main.c        ****  MCU Initialization                                                                  
+  44:main.c        **** ------------------------------------------------------------------------------*/
+  45:main.c        **** HAL_Init();
+  37              		.loc 1 45 1 view .LVU1
+  38 0002 FFF7FEFF 		bl	HAL_Init
+  39              	.LVL0:
+  46:main.c        **** SystemClock_Config();
+  40              		.loc 1 46 1 view .LVU2
+  41 0006 FFF7FEFF 		bl	SystemClock_Config
+  42              	.LVL1:
+  43              	.L2:
+  47:main.c        **** 
+  48:main.c        **** 
+  49:main.c        **** /*------------------------------------------------------------------------------
+  50:main.c        ****  Event Loop                                                                  
+  51:main.c        **** ------------------------------------------------------------------------------*/
+  52:main.c        **** while (1)
+  44              		.loc 1 52 1 discriminator 1 view .LVU3
+  53:main.c        ****     {
+  54:main.c        ****     
+  55:main.c        ****     }
+  45              		.loc 1 55 5 discriminator 1 view .LVU4
+  52:main.c        ****     {
+  46              		.loc 1 52 7 discriminator 1 view .LVU5
+  47 000a FEE7     		b	.L2
+  48              		.cfi_endproc
+  49              	.LFE65:
+  51              		.text
+  52              	.Letext0:
+  53              		.file 2 "../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+  54              		.file 3 "../../../init/rev0/init.h"
+ARM GAS  C:\Users\tnguy\AppData\Local\Temp\ccUtKCbf.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\tnguy\AppData\Local\Temp\ccUtKCbf.s:18     .text.main:00000000 $t
+C:\Users\tnguy\AppData\Local\Temp\ccUtKCbf.s:24     .text.main:00000000 main
+
+UNDEFINED SYMBOLS
+HAL_Init
+SystemClock_Config
