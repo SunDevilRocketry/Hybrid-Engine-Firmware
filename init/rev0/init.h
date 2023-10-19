@@ -33,6 +33,7 @@ extern "C" {
 ------------------------------------------------------------------------------*/
 void Error_Handler(void);
 void SystemClock_Config(void);
+void MX_GPIO_Init(void);
 
 #ifdef __cplusplus
 }

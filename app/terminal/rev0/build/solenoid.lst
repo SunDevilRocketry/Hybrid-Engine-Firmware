@@ -1,0 +1,205 @@
+ARM GAS  C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"solenoid.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.solenoid_cmd_execute,"ax",%progbits
+  18              		.align	1
+  19              		.global	solenoid_cmd_execute
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	solenoid_cmd_execute:
+  25              	.LVL0:
+  26              	.LFB65:
+  27              		.file 1 "../../../mod/hybrid_solenoid/solenoid.c"
+   1:../../../mod/hybrid_solenoid/solenoid.c **** /*******************************************************************************
+   2:../../../mod/hybrid_solenoid/solenoid.c **** *
+   3:../../../mod/hybrid_solenoid/solenoid.c **** * FILE:
+   4:../../../mod/hybrid_solenoid/solenoid.c **** * 		solenoid.c
+   5:../../../mod/hybrid_solenoid/solenoid.c **** *
+   6:../../../mod/hybrid_solenoid/solenoid.c **** * DESCRIPTION:
+   7:../../../mod/hybrid_solenoid/solenoid.c **** * 		Basic solenoid actuation API for hyprid engine
+   8:../../../mod/hybrid_solenoid/solenoid.c **** *
+   9:../../../mod/hybrid_solenoid/solenoid.c **** *******************************************************************************/
+  10:../../../mod/hybrid_solenoid/solenoid.c **** 
+  11:../../../mod/hybrid_solenoid/solenoid.c **** /*------------------------------------------------------------------------------
+  12:../../../mod/hybrid_solenoid/solenoid.c ****  Includes
+  13:../../../mod/hybrid_solenoid/solenoid.c **** ------------------------------------------------------------------------------*/
+  14:../../../mod/hybrid_solenoid/solenoid.c **** #include "main.h"
+  15:../../../mod/hybrid_solenoid/solenoid.c **** #include "solenoid.h"
+  16:../../../mod/hybrid_solenoid/solenoid.c **** 
+  17:../../../mod/hybrid_solenoid/solenoid.c **** /*------------------------------------------------------------------------------
+  18:../../../mod/hybrid_solenoid/solenoid.c ****  Global Variables 
+  19:../../../mod/hybrid_solenoid/solenoid.c **** ------------------------------------------------------------------------------*/
+  20:../../../mod/hybrid_solenoid/solenoid.c **** 
+  21:../../../mod/hybrid_solenoid/solenoid.c **** 
+  22:../../../mod/hybrid_solenoid/solenoid.c **** /*------------------------------------------------------------------------------
+  23:../../../mod/hybrid_solenoid/solenoid.c ****  Procedures 
+  24:../../../mod/hybrid_solenoid/solenoid.c **** ------------------------------------------------------------------------------*/
+  25:../../../mod/hybrid_solenoid/solenoid.c **** 
+  26:../../../mod/hybrid_solenoid/solenoid.c **** /*******************************************************************************
+  27:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  28:../../../mod/hybrid_solenoid/solenoid.c **** * PROCEDURE:                                                                   *
+  29:../../../mod/hybrid_solenoid/solenoid.c **** * 		solenoid_cmd_execute                                                   *
+  30:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  31:../../../mod/hybrid_solenoid/solenoid.c **** * DESCRIPTION:                                                                 *
+ARM GAS  C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s 			page 2
+
+
+  32:../../../mod/hybrid_solenoid/solenoid.c **** * 		Executes a solenoid function based on a subcommand code from a PC      *
+  33:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  34:../../../mod/hybrid_solenoid/solenoid.c **** *******************************************************************************/
+  35:../../../mod/hybrid_solenoid/solenoid.c **** void solenoid_cmd_execute
+  36:../../../mod/hybrid_solenoid/solenoid.c ****     (
+  37:../../../mod/hybrid_solenoid/solenoid.c **** 	uint8_t solenoid_cmd_opcode  /* Solenoid actuation code */
+  38:../../../mod/hybrid_solenoid/solenoid.c ****     )
+  39:../../../mod/hybrid_solenoid/solenoid.c **** {
+  28              		.loc 1 39 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  40:../../../mod/hybrid_solenoid/solenoid.c **** 
+  41:../../../mod/hybrid_solenoid/solenoid.c ****     
+  42:../../../mod/hybrid_solenoid/solenoid.c ****     //TODO: Implement solenoid execution based on subcommands code from the PC terminal software ap
+  43:../../../mod/hybrid_solenoid/solenoid.c **** }
+  33              		.loc 1 43 1 view .LVU1
+  34 0000 7047     		bx	lr
+  35              		.cfi_endproc
+  36              	.LFE65:
+  38              		.section	.text.solenoid_on,"ax",%progbits
+  39              		.align	1
+  40              		.global	solenoid_on
+  41              		.syntax unified
+  42              		.thumb
+  43              		.thumb_func
+  45              	solenoid_on:
+  46              	.LFB66:
+  44:../../../mod/hybrid_solenoid/solenoid.c **** 
+  45:../../../mod/hybrid_solenoid/solenoid.c **** /*******************************************************************************
+  46:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  47:../../../mod/hybrid_solenoid/solenoid.c **** * PROCEDURE:                                                                   *
+  48:../../../mod/hybrid_solenoid/solenoid.c **** * 		solenoid_on                                                            *
+  49:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  50:../../../mod/hybrid_solenoid/solenoid.c **** * DESCRIPTION:                                                                 *
+  51:../../../mod/hybrid_solenoid/solenoid.c **** * 		 Applies power to a specified solenoid                                 *
+  52:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  53:../../../mod/hybrid_solenoid/solenoid.c **** *******************************************************************************/
+  54:../../../mod/hybrid_solenoid/solenoid.c **** void solenoid_on(){
+  47              		.loc 1 54 19 view -0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51 0000 08B5     		push	{r3, lr}
+  52              	.LCFI0:
+  53              		.cfi_def_cfa_offset 8
+  54              		.cfi_offset 3, -8
+  55              		.cfi_offset 14, -4
+  55:../../../mod/hybrid_solenoid/solenoid.c ****     //TODO: Implement code to turn on the solenoid
+  56:../../../mod/hybrid_solenoid/solenoid.c ****     
+  57:../../../mod/hybrid_solenoid/solenoid.c **** HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
+  56              		.loc 1 57 1 view .LVU3
+  57 0002 0122     		movs	r2, #1
+  58 0004 0221     		movs	r1, #2
+  59 0006 0248     		ldr	r0, .L4
+  60 0008 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s 			page 3
+
+
+  61              	.LVL1:
+  58:../../../mod/hybrid_solenoid/solenoid.c **** 
+  59:../../../mod/hybrid_solenoid/solenoid.c **** }
+  62              		.loc 1 59 1 is_stmt 0 view .LVU4
+  63 000c 08BD     		pop	{r3, pc}
+  64              	.L5:
+  65 000e 00BF     		.align	2
+  66              	.L4:
+  67 0010 00080140 		.word	1073809408
+  68              		.cfi_endproc
+  69              	.LFE66:
+  71              		.section	.text.solenoid_off,"ax",%progbits
+  72              		.align	1
+  73              		.global	solenoid_off
+  74              		.syntax unified
+  75              		.thumb
+  76              		.thumb_func
+  78              	solenoid_off:
+  79              	.LFB67:
+  60:../../../mod/hybrid_solenoid/solenoid.c **** /*******************************************************************************
+  61:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  62:../../../mod/hybrid_solenoid/solenoid.c **** * PROCEDURE:                                                                   *
+  63:../../../mod/hybrid_solenoid/solenoid.c **** * 		solenoid_off                                                           *
+  64:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  65:../../../mod/hybrid_solenoid/solenoid.c **** * DESCRIPTION:                                                                 *
+  66:../../../mod/hybrid_solenoid/solenoid.c **** * 		 Removes power from a specified solenoid                               *
+  67:../../../mod/hybrid_solenoid/solenoid.c **** *                                                                              *
+  68:../../../mod/hybrid_solenoid/solenoid.c **** *******************************************************************************/
+  69:../../../mod/hybrid_solenoid/solenoid.c **** void solenoid_off(){
+  80              		.loc 1 69 20 is_stmt 1 view -0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84 0000 08B5     		push	{r3, lr}
+  85              	.LCFI1:
+  86              		.cfi_def_cfa_offset 8
+  87              		.cfi_offset 3, -8
+  88              		.cfi_offset 14, -4
+  70:../../../mod/hybrid_solenoid/solenoid.c ****     //TODO: Implement code to turn off the solenoid
+  71:../../../mod/hybrid_solenoid/solenoid.c **** 
+  72:../../../mod/hybrid_solenoid/solenoid.c **** HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_RESET);
+  89              		.loc 1 72 1 view .LVU6
+  90 0002 0022     		movs	r2, #0
+  91 0004 0221     		movs	r1, #2
+  92 0006 0248     		ldr	r0, .L8
+  93 0008 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  94              	.LVL2:
+  73:../../../mod/hybrid_solenoid/solenoid.c **** 
+  74:../../../mod/hybrid_solenoid/solenoid.c **** }
+  95              		.loc 1 74 1 is_stmt 0 view .LVU7
+  96 000c 08BD     		pop	{r3, pc}
+  97              	.L9:
+  98 000e 00BF     		.align	2
+  99              	.L8:
+ 100 0010 00080140 		.word	1073809408
+ 101              		.cfi_endproc
+ 102              	.LFE67:
+ARM GAS  C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s 			page 4
+
+
+ 104              		.text
+ 105              	.Letext0:
+ 106              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 107              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 108              		.file 4 "../../../auto/rev0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 109              		.file 5 "../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 solenoid.c
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:18     .text.solenoid_cmd_execute:00000000 $t
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:24     .text.solenoid_cmd_execute:00000000 solenoid_cmd_execute
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:39     .text.solenoid_on:00000000 $t
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:45     .text.solenoid_on:00000000 solenoid_on
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:67     .text.solenoid_on:00000010 $d
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:72     .text.solenoid_off:00000000 $t
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:78     .text.solenoid_off:00000000 solenoid_off
+C:\Users\SRY19_~1\AppData\Local\Temp\cco90cF4.s:100    .text.solenoid_off:00000010 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin

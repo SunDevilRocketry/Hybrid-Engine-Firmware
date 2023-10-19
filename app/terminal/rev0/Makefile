@@ -56,6 +56,7 @@ $(INIT_DIR)/init.c 													\
 $(INIT_DIR)/config/Src/stm32f1xx_it.c 								\
 $(INIT_DIR)/config/Src/stm32f1xx_hal_msp.c 							\
 $(INIT_DIR)/config/Src/system_stm32f1xx.c  							\
+$(MOD_DIR)/hybrid_solenoid/solenoid.c								\
 $(LIB_REV0_DIR)/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c \
 $(LIB_REV0_DIR)/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c \
 $(LIB_REV0_DIR)/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c \
@@ -129,6 +130,7 @@ C_INCLUDES =  												\
 -I.															\
 -I$(INIT_DIR)												\
 -I$(INIT_DIR)/config/Inc 									\
+-I$(MOD_DIR)/hybrid_solenoid								\
 -I$(LIB_REV0_DIR)                                           		\
 -I$(LIB_REV0_DIR)/Drivers/STM32F1xx_HAL_Driver/Inc 					\
 -I$(LIB_REV0_DIR)/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy 			\

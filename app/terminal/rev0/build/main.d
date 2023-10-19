@@ -21,7 +21,7 @@ build/main.o: main.c main.h \
  ../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../../../init/rev0/init.h main.h
+ ../../../init/rev0/init.h main.h ../../../mod/hybrid_solenoid/solenoid.h
 main.h:
 ../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../../../init/rev0/config/Inc/stm32f1xx_hal_conf.h:
@@ -47,3 +47,4 @@ main.h:
 ../../../auto/rev0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../../../init/rev0/init.h:
 main.h:
+../../../mod/hybrid_solenoid/solenoid.h:

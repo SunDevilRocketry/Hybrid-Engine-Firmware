@@ -21,7 +21,7 @@
 /* Application Layer */
 #include "main.h"
 #include "init.h"
-
+#include "solenoid.h"
 /* Low-level modules */
 
 
@@ -49,6 +49,8 @@ SystemClock_Config();
 /*------------------------------------------------------------------------------
  Event Loop                                                                  
 ------------------------------------------------------------------------------*/
+
+solenoid_on();
 while (1)
     {
     
